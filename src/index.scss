@@ -1,17 +1,182 @@
-* {
+@use "variables" as v;
+
+*,
+::before,
+::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
 }
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  scroll-behavior: smooth;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: v.$color-secondary-500;
+  color: v.$white;
+  font-weight: 400;
+  line-height: 1.7;
+  background-image: url(./assets/bg-texture.png);
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 2.488rem;
+}
+
+h2 {
+  font-size: 2.074rem;
+}
+
+h3 {
+  font-size: 1.728rem;
+}
+
+h4 {
+  font-size: 1.44rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+small,
+.text_small {
+  font-size: 0.833rem;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/*
+====================
+General Styles
+====================
+*/
+
+.container {
+  width: v.$container-width-lg;
+}
+
+.section {
+  margin-bottom: 8em;
+  h2,
+  h5 {
+    text-align: center;
+    color: v.$light;
+  }
+  h2 {
+    color: v.$color-primary-500;
+  }
+}
+
+.text-light {
+  color: v.$light;
+}
+
+a {
+  color: v.$color-primary-500;
+  transition: v.$transition;
+
+  &:hover {
+    color: v.$white;
+  }
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: v.$color-primary-500;
+  padding: 0.75em 1.2em;
+  border-radius: v.$borderRadius;
+  cursor: pointer;
+  border: 1px solid v.$color-primary-500;
+  box-shadow: v.$shadow-1;
+  transition: v.$transition;
+  &:hover {
+    background: v.$white;
+    color: v.$color-secondary-500;
+    border-color: transparent;
+  }
+}
+
+.btn-primary {
+  background: v.$color-primary-500;
+  color: v.$color-secondary-500;
+}
+
+img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+/*
+====================
+Media Queries
+====================
+*/
+// big screen
+@media screen and (min-width: 1024px) {
+  .container {
+    width: v.$container-width-md;
+  }
+
+  .section {
+    margin-bottom: 6em;
+  }
+}
+//small screen
+@media screen and (min-width: 600px) {
+  .container {
+    width: v.$container-width-sm;
+  }
+
+  .section {
+    h2 {
+      margin-bottom: 2em;
+    }
+  }
 }

@@ -1,0 +1,51 @@
+// colors
+$color-primary-100: #dbf0ff;
+$color-primary-200: #b8e1ff;
+$color-primary-300: #94d3ff;
+$color-primary-400: #71c4ff;
+$color-primary-500: #4db5ff;
+$color-primary-600: #3e91cc;
+$color-primary-700: #2e6d99;
+$color-primary-800: #1f4866;
+$color-primary-900: #0f2433;
+$color-primary-variant: rgba(77, 181, 255, 0.4);
+
+//color variant
+$color-secondary-100: #d5d5e2;
+$color-secondary-200: #ababc4;
+$color-secondary-300: #8080a7;
+$color-secondary-400: #565689;
+$color-secondary-500: #2c2c6c;
+$color-secondary-600: #232356;
+$color-secondary-700: #1a1a41;
+$color-secondary-800: #12122b;
+$color-secondary-900: #090916;
+
+//greys
+$grey-50: #f9fafb;
+$grey-100: #f3f4f6;
+$grey-200: #e5e7eb;
+$grey-300: #d1d5db;
+$grey-400: #9ca3af;
+$grey-500: #6b7280;
+$grey-600: #4b5563;
+$grey-700: #374151;
+$grey-800: #1f2937;
+$grey-900: #111827;
+
+$white: #fff;
+$light: rgb(255, 255, 255, 0.6);
+//box shadows
+$shadow-1: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+$shadow-2: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+  0 4px 6px -4px rgba(0, 0, 0, 0.1);
+$shadow-3: 0 20px 25px -5px rgb(0, 0, 0, 0.1), 0 8px 10px -6px rgb(0, 0, 0, 0.1);
+
+//rest of vars
+$borderRadius: 0.25em;
+$letterSpacing: 1px;
+$transition: all 250ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+$container-width-lg: 75%;
+$container-width-md: 86%;
+$container-width-sm: 90%;
