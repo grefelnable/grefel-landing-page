@@ -98,10 +98,12 @@ General Styles
 
 .container {
   width: v.$container-width-lg;
+  margin: 0 auto;
+  max-width: 1170px;
 }
 
 .section {
-  margin-bottom: 8em;
+  margin-top: 8em;
   h2,
   h5 {
     text-align: center;
@@ -150,7 +152,7 @@ a {
 img {
   width: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /*
@@ -165,7 +167,7 @@ Media Queries
   }
 
   .section {
-    margin-bottom: 6em;
+    margin-top: 6em;
   }
 }
 //small screen

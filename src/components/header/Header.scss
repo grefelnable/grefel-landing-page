@@ -1,1 +1,91 @@
 @use "../../variables" as v;
+
+h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: v.$letterSpacing;
+  color: transparent;
+  -webkit-text-stroke: 1px v.$white;
+  background: url(../../assets/back.png);
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+h5 {
+  letter-spacing: v.$letterSpacing;
+}
+
+header {
+  height: 100vh;
+  padding-top: 7em;
+  overflow: hidden;
+
+  .header__container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+  }
+}
+
+/*
+=====================
+Button Group
+=====================
+*/
+.header__btn-group {
+  margin-top: 2em;
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+/*
+=====================
+Header Socials
+=====================
+*/
+.social-icons {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  position: absolute;
+  left: 0;
+  bottom: 3em;
+
+  &::after {
+    content: "";
+    height: 4em;
+    width: 1px;
+    background: v.$color-primary-500;
+  }
+}
+
+@media screen and (min-width: 882px) {
+  .social-icons {
+    display: flex;
+  }
+}
+/*
+=====================
+Header Socials
+=====================
+*/
+.grefel {
+  background: linear-gradient(v.$color-primary-500, transparent);
+  width: 22em;
+  height: 20.5em;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 12em 12em 0 0;
+  overflow: hidden;
+}
