@@ -97,21 +97,26 @@ General Styles
 */
 
 .container {
-  width: v.$container-width-lg;
+  width: v.$container-width-sm;
   margin: 0 auto;
   max-width: 1170px;
 }
 
 .section {
-  margin-top: 8em;
+  padding-top: 5em;
   height: 100vh;
-  h2,
-  h5 {
-    text-align: center;
-    color: v.$light;
-  }
-  h2 {
-    color: v.$color-primary-500;
+
+  &__title {
+    margin-bottom: 4em;
+    h2,
+    h5 {
+      text-align: center;
+      color: v.$light;
+      text-transform: capitalize;
+    }
+    h2 {
+      color: v.$color-primary-500;
+    }
   }
 }
 
@@ -164,23 +169,7 @@ Media Queries
 */
 // big screen
 @media screen and (min-width: 1024px) {
-  .container {
-    width: v.$container-width-md;
-  }
-
   .section {
-    margin-top: 6em;
-  }
-}
-//small screen
-@media screen and (min-width: 600px) {
-  .container {
-    width: v.$container-width-sm;
-  }
-
-  .section {
-    h2 {
-      margin-bottom: 2em;
-    }
+    height: 80vh;
   }
 }

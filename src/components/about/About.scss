@@ -1,0 +1,68 @@
+@use "../../variables" as v;
+.about {
+  height: fit-content;
+}
+.about__container {
+  .image {
+    width: 100%;
+  }
+  .about__img-container {
+    width: 12em;
+    border-radius: 2em;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    background: linear-gradient(
+      50deg,
+      v.$color-primary-500,
+      transparent,
+      v.$color-primary-500
+    );
+
+    img {
+      border-radius: 2em;
+      opacity: 1;
+      transform: rotate(-8deg);
+      transition: v.$transition;
+    }
+
+    &:hover {
+      img {
+        transform: rotate(0);
+      }
+    }
+  }
+}
+
+.about__text {
+  p {
+    color: v.$light;
+  }
+}
+
+/*
+============
+Media Queries
+============
+*/
+@media screen and (min-width: 768px) {
+  .about__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about__img-container {
+    width: 17em;
+    margin: 0;
+  }
+  .image {
+    flex: 1;
+  }
+  .about__text {
+    flex: 1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .about {
+    height: 80vh;
+  }
+}

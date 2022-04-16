@@ -29,9 +29,12 @@ nav {
         font-size: 1.25rem;
         padding: 1rem 1.2rem;
         border-radius: 50%;
+        transition: v.$transition;
+
         .nav-icon {
           transition: v.$transition;
         }
+
         &:hover {
           .nav-icon {
             transform: scale(1.25);
