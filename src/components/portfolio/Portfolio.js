@@ -1,11 +1,11 @@
 import React from "react"
 import "./Portfolio.scss"
-import data from "../../data"
+import Data from "../../data"
 import Items from "./Items"
 
 const Portfolio = () => {
-  const [projects, setProjects] = React.useState(data)
-
+  const [projects, setProjects] = React.useState(Data)
+  console.log(setProjects)
   return (
     <section className="section portfolio" id="portfolio">
       <div className="section__title">

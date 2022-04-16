@@ -1,4 +1,4 @@
-export default [
+const Data = [
   {
     id: 1,
     image: "./images/weather-app.png",
@@ -14,3 +14,5 @@ export default [
     demo: "https://clock-app-grefel.netlify.app/",
   },
 ]
+
+export default Data
