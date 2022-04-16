@@ -9,7 +9,7 @@ import {
 
 const Nav = () => {
   const [activeLink, setActiveLink] = React.useState("#")
-  console.log(activeLink)
+
   return (
     <nav>
       <ul>

@@ -19,8 +19,12 @@ nav {
     align-items: center;
 
     li {
-      padding: 0.7em 0.5em;
-      a {
+      padding: 0.5em;
+
+      button {
+        cursor: pointer;
+        background: transparent;
+        border: none;
         color: v.$light;
         font-size: 1.25rem;
         padding: 1rem 1.2rem;
