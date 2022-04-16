@@ -9,10 +9,31 @@ import {
 
 const Nav = () => {
   const [activeLink, setActiveLink] = React.useState("#")
-
+  console.log(activeLink)
   return (
     <nav>
       <ul>
+        <li>
+          <button
+            type="button"
+            className={activeLink === "#" ? "active" : ""}
+            onClick={() => {
+              window.location.href = "#"
+              setActiveLink("#")
+              console.log(activeLink)
+            }}
+          >
+            <AiOutlineHome className="nav-icon" />
+          </button>
+        </li>
+      </ul>
+    </nav>
+  )
+}
+
+export default Nav
+{
+  /* <ul>
         <li>
           <a
             href="#"
@@ -49,9 +70,5 @@ const Nav = () => {
             <AiOutlineMessage className="nav-icon" />
           </a>
         </li>
-      </ul>
-    </nav>
-  )
+      </ul> */
 }
-
-export default Nav
