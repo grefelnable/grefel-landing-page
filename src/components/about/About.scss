@@ -49,11 +49,13 @@ Media Queries
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .about__img-container {
+      width: 17em;
+      margin: 0;
+    }
   }
-  .about__img-container {
-    width: 17em;
-    margin: 0;
-  }
+
   .image {
     flex: 1;
   }
