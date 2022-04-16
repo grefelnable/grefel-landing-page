@@ -26,49 +26,48 @@ const Nav = () => {
             <AiOutlineHome className="nav-icon" />
           </button>
         </li>
+        <li>
+          <button
+            type="button"
+            className={activeLink === "#about" ? "active" : ""}
+            onClick={() => {
+              window.location.href = "#about"
+              setActiveLink("#about")
+              console.log(activeLink)
+            }}
+          >
+            <AiOutlineUser className="nav-icon" />
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            className={activeLink === "#portfolio" ? "active" : ""}
+            onClick={() => {
+              window.location.href = "#portfolio"
+              setActiveLink("#portfolio")
+              console.log(activeLink)
+            }}
+          >
+            <AiOutlineProject className="nav-icon" />
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            className={activeLink === "#contact" ? "active" : ""}
+            onClick={() => {
+              window.location.href = "#contact"
+              setActiveLink("#contact")
+              console.log(activeLink)
+            }}
+          >
+            <AiOutlineMessage className="nav-icon" />
+          </button>
+        </li>
       </ul>
     </nav>
   )
 }
 
 export default Nav
-{
-  /* <ul>
-        <li>
-          <a
-            href="#"
-            className={activeLink === "#" ? "active" : ""}
-            onClick={() => setActiveLink("#")}
-          >
-            <AiOutlineHome className="nav-icon" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="#about"
-            className={activeLink === "#about" ? "active" : ""}
-            onClick={() => setActiveLink("#about")}
-          >
-            <AiOutlineUser className="nav-icon" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="#portfolio"
-            className={activeLink === "#portfolio" ? "active" : ""}
-            onClick={() => setActiveLink("#portfolio")}
-          >
-            <AiOutlineProject className="nav-icon" />
-          </a>
-        </li>
-        <li>
-          <a
-            href="#contact"
-            className={activeLink === "#contact" ? "active" : ""}
-            onClick={() => setActiveLink("#contact")}
-          >
-            <AiOutlineMessage className="nav-icon" />
-          </a>
-        </li>
-      </ul> */
-}
