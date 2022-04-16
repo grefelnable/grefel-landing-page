@@ -4,7 +4,7 @@
   height: fit-content;
 }
 .portfolio__item {
-  background: v.$color-secondary-500;
+  background: v.$color-secondary-600;
   padding: 1.3em;
   margin-bottom: 1.25em;
   border-radius: v.$borderRadius;
@@ -30,5 +30,18 @@
   a {
     text-transform: capitalize;
     margin-right: 1em;
+  }
+}
+
+/*
+==============
+Media Queries
+==============
+*/
+@media screen and (min-width: 768px) {
+  .portfolio__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
   }
 }
