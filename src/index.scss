@@ -104,6 +104,7 @@ General Styles
 
 .section {
   margin-top: 8em;
+  height: 100vh;
   h2,
   h5 {
     text-align: center;
@@ -140,6 +141,7 @@ a {
   &:hover {
     background: v.$white;
     color: v.$color-secondary-500;
+    box-shadow: v.$shadow-2;
     border-color: transparent;
   }
 }

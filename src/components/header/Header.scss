@@ -19,7 +19,7 @@ h1 {
   }
 }
 h5 {
-  letter-spacing: v.$letterSpacing;
+  letter-spacing: 3px;
 }
 
 header {
@@ -33,7 +33,11 @@ header {
     position: relative;
   }
 }
-
+@media screen and (min-width: 1024px) {
+  header {
+    height: 80vh;
+  }
+}
 /*
 =====================
 Button Group
@@ -69,7 +73,7 @@ Header Socials
   }
 }
 
-@media screen and (min-width: 882px) {
+@media screen and (min-width: 768px) {
   .social-icons {
     display: flex;
   }

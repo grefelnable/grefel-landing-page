@@ -1,0 +1,51 @@
+@use "../../variables" as v;
+
+nav {
+  background: rgba(0, 0, 0, 0.3);
+  width: max-content;
+  display: block;
+  padding: 0.74em 1.7em;
+  position: fixed;
+  z-index: 4;
+  left: 50%;
+  bottom: 5em;
+  transform: translateX(-50%);
+  border-radius: 5em;
+  backdrop-filter: blur(15px);
+  box-shadow: v.$shadow-4;
+
+  ul {
+    display: flex;
+    align-items: center;
+
+    li {
+      padding: 0.7em 0.5em;
+      a {
+        color: v.$light;
+        font-size: 1.25rem;
+        padding: 1rem 1.2rem;
+        border-radius: 50%;
+        .nav-icon {
+          transition: v.$transition;
+        }
+        &:hover {
+          .nav-icon {
+            transform: scale(1.25);
+          }
+
+          background: v.$color-secondary-800;
+          color: v.$color-primary-300;
+          box-shadow: v.$shadow-2;
+        }
+      }
+    }
+  }
+
+  .active {
+    background: v.$color-secondary-800;
+    color: v.$color-primary-300;
+    .nav-icon {
+      transform: scale(1.25);
+    }
+  }
+}
