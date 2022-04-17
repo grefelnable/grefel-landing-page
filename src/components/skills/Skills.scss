@@ -4,6 +4,12 @@
   background: v.$color-secondary-600;
   border-radius: 1em;
   padding: 2em 3em;
+  transition: v.$transition;
+
+  &:hover {
+    background: transparent;
+    border: 1px solid v.$color-primary-500;
+  }
   h5 {
     text-align: center;
     text-transform: capitalize;
