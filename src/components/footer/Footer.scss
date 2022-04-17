@@ -1,0 +1,76 @@
+@use "../../variables" as v;
+
+footer {
+  background: v.$color-primary-600;
+  text-align: center;
+  padding-top: 2em;
+  padding-bottom: 10em;
+  letter-spacing: v.$letterSpacing;
+  h2 {
+    color: v.$color-secondary-600;
+  }
+  small {
+    color: v.$grey-300;
+  }
+}
+
+/*
+============
+Footer Links
+============
+*/
+.footer__links {
+  margin-bottom: 1em;
+  button {
+    color: v.$color-secondary-500;
+    background: none;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    transition: v.$transition;
+    letter-spacing: v.$letterSpacing;
+    cursor: pointer;
+
+    &:hover {
+      color: v.$color-secondary-100;
+    }
+  }
+}
+
+/*
+============
+Footer Socials
+============
+*/
+.footer__socials {
+  display: flex;
+  justify-content: center;
+
+  gap: 1em;
+
+  a {
+    background: v.$color-secondary-700;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    display: grid;
+    place-items: center;
+    font-size: 1.25rem;
+    &:hover {
+      transform: scale(1.2);
+      box-shadow: v.$shadow-3;
+    }
+  }
+}
+/*
+============
+Media Queries
+============
+*/
+
+@media screen and (min-width: 882px) {
+  .footer__links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+  }
+}
