@@ -2,7 +2,32 @@ import React from "react"
 import "./Contact.scss"
 import { FiMail } from "react-icons/fi"
 import { RiMessengerLine } from "react-icons/ri"
+// optional
+// import emailjs from "emailjs-com"
+
 const Contact = () => {
+  //optional due to anyone can send malicious message
+  // const form = useRef()
+
+  // const sendEmail = (e) => {
+  //   e.preventDefault()
+
+  //   emailjs
+  //     .sendForm(
+  //       "service_aiw09vc",
+  //       "template_yxmp19v",
+  //       form.current,
+  //       "4v7U7yQi8XcCTaXua"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text)
+  //       },
+  //       (error) => {
+  //         console.log(error.text)
+  //       }
+  //     )
+  // }
   return (
     <section className="section contact" id="contact">
       <div className="section__title">
@@ -41,9 +66,11 @@ const Contact = () => {
           {/* end of single contact */}
         </div>
         {/* end of contact options */}
-        {/* contact form */}
-        <form action="/">
+        {/* //optional due to anyone can send malicious message */}
+        {/* contact form
+        <form ref={form} onSubmit={sendEmail}>
           <input
+            className="input__name"
             type="text"
             name="name"
             placeholder="Your Full Name "
@@ -60,7 +87,7 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
-        </form>
+        </form> */}
       </div>
     </section>
   )

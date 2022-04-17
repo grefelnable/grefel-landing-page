@@ -1,5 +1,9 @@
 @use "../../variables" as v;
 
+.contact__options {
+  max-width: 600px;
+  margin: 0 auto;
+}
 .contact__option {
   background: v.$color-secondary-600;
   text-align: center;
@@ -35,35 +39,38 @@ Form
 ============
 */
 
-form {
-  input,
-  textarea {
-    display: block;
-    margin-bottom: 1em;
-    width: 100%;
-    background: transparent;
-    border: 1px solid v.$color-secondary-400;
-    border-radius: 0.75em;
-    padding: 1em;
-    color: v.$light;
-    resize: none;
-  }
-}
+// form {
+//   .input__name {
+//     text-transform: capitalize;
+//   }
+//   input,
+//   textarea {
+//     display: block;
+//     margin-bottom: 1em;
+//     width: 100%;
+//     background: transparent;
+//     border: 1px solid v.$color-secondary-400;
+//     border-radius: 0.75em;
+//     padding: 1em;
+//     color: v.$light;
+//     resize: none;
+//   }
+// }
 
-/*
-============
-Media Queries
-============
-*/
-@media screen and (min-width: 882px) {
-  .contact__container {
-    width: 58vw;
-    display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
-  }
-  .contact__options {
-    display: flex;
-    flex-direction: column;
-  }
-}
+// /*
+// ============
+// Media Queries
+// ============
+// */
+// @media screen and (min-width: 882px) {
+//   .contact__container {
+//     width: 58vw;
+//     display: grid;
+//     grid-template-columns: 30% 58%;
+//     gap: 12%;
+//   }
+//   .contact__options {
+//     display: flex;
+//     flex-direction: column;
+//   }
+// }
