@@ -5,7 +5,8 @@
 }
 .portfolio__item {
   background: v.$color-secondary-600;
-  padding: 1.3em;
+  min-width: 320px;
+  padding: 1.5em;
   margin-bottom: 1.25em;
   border-radius: v.$borderRadius;
   border: 1px solid transparent;
@@ -39,6 +40,9 @@ Media Queries
 ==============
 */
 @media screen and (min-width: 768px) {
+  .portfolio {
+    height: 100vh;
+  }
   .portfolio__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

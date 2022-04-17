@@ -1,0 +1,69 @@
+@use "../../variables" as v;
+
+.contact__option {
+  background: v.$color-secondary-600;
+  text-align: center;
+  margin-bottom: 1em;
+  padding: 1em;
+  border-radius: v.$borderRadius;
+  border: 1px solid transparent;
+  transition: v.$transition;
+
+  &:hover {
+    background: transparent;
+    border-color: v.$color-primary-400;
+  }
+  span {
+    font-size: 1.25rem;
+  }
+  p {
+    text-transform: capitalize;
+  }
+  small {
+    color: v.$light;
+  }
+  a {
+    display: block;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+  }
+}
+
+/*
+============
+Form
+============
+*/
+
+form {
+  input,
+  textarea {
+    display: block;
+    margin-bottom: 1em;
+    width: 100%;
+    background: transparent;
+    border: 1px solid v.$color-secondary-400;
+    border-radius: 0.75em;
+    padding: 1em;
+    color: v.$light;
+    resize: none;
+  }
+}
+
+/*
+============
+Media Queries
+============
+*/
+@media screen and (min-width: 882px) {
+  .contact__container {
+    width: 58vw;
+    display: grid;
+    grid-template-columns: 30% 58%;
+    gap: 12%;
+  }
+  .contact__options {
+    display: flex;
+    flex-direction: column;
+  }
+}
