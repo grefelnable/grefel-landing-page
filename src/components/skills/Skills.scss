@@ -1,0 +1,35 @@
+@use "../../variables" as v;
+
+.front-end {
+  background: v.$color-secondary-600;
+  border-radius: 1em;
+  padding: 2em 3em;
+  h5 {
+    text-align: center;
+    text-transform: capitalize;
+    color: v.$color-primary-500;
+    margin-bottom: 1em;
+  }
+}
+.skills__wrapper {
+  max-width: 600px;
+}
+/*
+============
+Skills
+============
+*/
+.skills__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+.skill {
+  display: flex;
+  gap: 1em;
+
+  span {
+    color: v.$color-primary-500;
+    font-size: 1.25rem;
+  }
+}
