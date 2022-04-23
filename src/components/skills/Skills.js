@@ -52,6 +52,12 @@ const Skills = () => {
               </span>
               <p>React Styled Components</p>
             </div>
+            <div className="skill">
+              <span>
+                <BsFillFileCodeFill />
+              </span>
+              <p>Tailwind CSS</p>
+            </div>
             {/* end of single skill */}
           </div>
         </div>

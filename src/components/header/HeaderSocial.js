@@ -1,5 +1,11 @@
 import React from "react"
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa"
+import {
+  FaGithub,
+  FaCodepen,
+  FaLinkedin,
+  FaTwitter,
+  FaInstagram,
+} from "react-icons/fa"
 
 const HeaderSocial = () => {
   return (
@@ -10,6 +16,13 @@ const HeaderSocial = () => {
         rel="noreferrer noopener"
       >
         <FaGithub />
+      </a>
+      <a
+        href="https://codepen.io/grefelnable"
+        target="_blank"
+        rel="noreferrer noopener"
+      >
+        <FaCodepen />
       </a>
       <a
         href="https://www.linkedin.com/in/grefel-nable"

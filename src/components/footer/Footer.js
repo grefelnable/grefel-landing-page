@@ -1,6 +1,12 @@
 import React from "react"
 import "./Footer.scss"
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa"
+import {
+  FaGithub,
+  FaCodepen,
+  FaLinkedin,
+  FaTwitter,
+  FaInstagram,
+} from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -47,6 +53,15 @@ const Footer = () => {
             rel="noreferrer noopener"
           >
             <FaGithub />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://codepen.io/grefelnable"
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            <FaCodepen />
           </a>
         </li>
         <li>
