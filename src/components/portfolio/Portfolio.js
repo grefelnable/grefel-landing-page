@@ -17,6 +17,24 @@ const Portfolio = () => {
         {projects.map((project) => {
           return <Items key={project.id} {...project} />
         })}
+        {/* Codepen Mini Projects */}
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img
+              src="./images/codepen-mini-projects.png"
+              alt="codepen projects in tile layout"
+            />
+          </div>
+          <h3>Mini Projects</h3>
+          <a
+            href="https://codepen.io/grefelnable/pens/public"
+            target="_blank"
+            rel="noreferrer noopener"
+            className="btn"
+          >
+            codepen
+          </a>
+        </article>
       </div>
     </section>
   )

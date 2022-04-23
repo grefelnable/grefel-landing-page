@@ -6,7 +6,7 @@ const Items = (props) => {
   return (
     <article className="portfolio__item">
       <div className="portfolio__item-image">
-        <img src={image} alt="weather app" />
+        <img src={image} alt={name} />
       </div>
       <h3>{name}</h3>
       <a
