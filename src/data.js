@@ -13,6 +13,13 @@ const Data = [
     github: "https://github.com/grefelnable/clock-app-gxl",
     demo: "https://clock-app-grefel.netlify.app/",
   },
+  {
+    id: 3,
+    image: "./images/amazon-clone.png",
+    name: "Amazon Clone app",
+    github: "https://github.com/grefelnable/amazon-clone-grefel",
+    demo: "https://amazon-clone-grefel.netlify.app/",
+  },
 ]
 
 export default Data

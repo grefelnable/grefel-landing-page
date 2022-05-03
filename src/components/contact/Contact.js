@@ -2,6 +2,7 @@ import React from "react"
 import "./Contact.scss"
 import { FiMail } from "react-icons/fi"
 import { RiMessengerLine } from "react-icons/ri"
+import { Fade } from "react-reveal"
 // optional
 // import emailjs from "emailjs-com"
 
@@ -30,44 +31,45 @@ const Contact = () => {
   // }
   return (
     <section className="section contact" id="contact">
-      <div className="section__title">
-        <h5>get in touch</h5>
-        <h2>contact me</h2>
-      </div>
-      <div className="container contact__container">
-        {/* contact options */}
-        {/* end of contact options */}
-        <div className="contact__options">
-          {/* single contact */}
-          <article className="contact__option">
-            <span>
-              <FiMail />
-            </span>
-            <p>email</p>
-            <small>felnable@gmail.com</small>
-            <a href="mailto:felnable@gmail.com">send a message</a>
-          </article>
-          {/* end of single contact */}
-          {/* single contact */}
-          <article className="contact__option">
-            <span>
-              <RiMessengerLine />
-            </span>
-            <p>messenger</p>
-            <small>Grefel Nable</small>
-            <a
-              href="https://m.me/grefel.nable.1"
-              target="_blank"
-              rel="noreferrer noopener"
-            >
-              send a message
-            </a>
-          </article>
-          {/* end of single contact */}
+      <Fade left>
+        <div className="section__title">
+          <h5>get in touch</h5>
+          <h2>contact me</h2>
         </div>
-        {/* end of contact options */}
-        {/* //optional due to anyone can send malicious message */}
-        {/* contact form
+        <div className="container contact__container">
+          {/* contact options */}
+          {/* end of contact options */}
+          <div className="contact__options">
+            {/* single contact */}
+            <article className="contact__option">
+              <span>
+                <FiMail />
+              </span>
+              <p>email</p>
+              <small>felnable@gmail.com</small>
+              <a href="mailto:felnable@gmail.com">send a message</a>
+            </article>
+            {/* end of single contact */}
+            {/* single contact */}
+            <article className="contact__option">
+              <span>
+                <RiMessengerLine />
+              </span>
+              <p>messenger</p>
+              <small>Grefel Nable</small>
+              <a
+                href="https://m.me/grefel.nable.1"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                send a message
+              </a>
+            </article>
+            {/* end of single contact */}
+          </div>
+          {/* end of contact options */}
+          {/* //optional due to anyone can send malicious message */}
+          {/* contact form
         <form ref={form} onSubmit={sendEmail}>
           <input
             className="input__name"
@@ -88,7 +90,8 @@ const Contact = () => {
             Send Message
           </button>
         </form> */}
-      </div>
+        </div>
+      </Fade>
     </section>
   )
 }

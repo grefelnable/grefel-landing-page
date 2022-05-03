@@ -1,7 +1,7 @@
 @use "../../variables" as v;
 
 .portfolio {
-  height: fit-content;
+  height: auto;
 }
 .portfolio__item {
   background: v.$color-secondary-600;
