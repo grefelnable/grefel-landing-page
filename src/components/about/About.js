@@ -38,6 +38,17 @@ const About = () => {
               that "Repetition is the mother of learning" that is why I
               literally redo a project at least twice or more to engrain it to
               my memory.
+              <br />
+              Check out my short video about myself
+              <span style={{ marginLeft: "0.75em" }}>
+                <a
+                  href="https://www.youtube.com/watch?v=hh7dIrtHlbc"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  VIDEO ABOUT ME
+                </a>
+              </span>
             </p>
             <button
               className="btn btn-primary"
